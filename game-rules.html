@@ -1,0 +1,189 @@
+<head>
+        <title>Domination Game Rules</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Import Inter font */
+        @import url('https://fonts.xz.style/serve/inter.css');
+
+        :root {
+            --nc-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+            --nc-tx-1: #ffffff;
+            --nc-tx-2: #eeeeee;
+            --nc-bg-1: #000000;
+            --nc-bg-2: #111111;
+            --nc-bg-3: #222222;
+            --nc-lk-1: #3291FF;
+            --nc-lk-2: #0070F3;
+            --nc-lk-tx: #FFFFFF;
+            --nc-ac-1: #7928CA;
+            --nc-ac-tx: #FFFFFF;
+            --highlight: #7928CA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, input, select, button {
+            font-family: var(--nc-font-sans);
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 750px;
+            padding: 2rem;
+            border-radius: 6px;
+            overflow-x: hidden;
+            background: var(--nc-bg-1);
+            color: var(--nc-tx-2);
+            font-size: 1.03rem;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--nc-tx-1);
+            margin-bottom: 1.5rem; /* Adds space below headings */
+        }
+
+        blockquote {
+            padding: 1.5rem;
+            background: var(--nc-bg-2);
+            border-left: 5px solid var(--nc-bg-3);
+            border-radius: 10px;
+            margin-bottom: 1.5rem; /* Space below blockquotes */
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem; /* Space below lists */
+        }
+
+        li {
+            margin-top: 0.4rem;
+        }
+
+        a {
+            color: var(--nc-lk-1);
+        }
+
+        a:hover {
+            color: var(--nc-lk-2);
+        }
+
+        button {
+            padding: 6px 12px;
+            background: var(--nc-lk-1);
+            color: var(--nc-lk-tx);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: var(--nc-lk-2);
+        }
+
+        /* Purple text selection highlight */
+        ::selection {
+            background-color: var(--highlight); /* Purple background highlight when selecting text */
+            color: var(--nc-tx-1); /* White text on selection */
+        }
+    </style>
+</head>
+
+<body>
+
+    <center><h1>Domination Game Rules</h1></center>
+    <hr>
+    <h3></h3>
+    <h3>Game Components</h3>
+    <ul>
+        <li>Game Board: A world map divided into islands scattered across the board.</li>
+        <li>Resource Cards: Includes Brick, Ore, Wool, Wheat, and Wood.</li>
+        <li>Player Pieces: Armies (and upgraded armies), Cities, Villages, Defenses, and Boats.</li>
+        <li>Dice: Players roll for resources each turn.</li>
+    </ul>
+
+    <h3>Basic Gameplay</h3>
+    <h4>Setup</h4>
+    <ul>
+        <li>Each player starts on a chosen island with their color-coded castle.</li>
+        <li>Place all player pieces in a pile near the game board; you can retrieve pieces as needed.</li>
+        <li>With 2 players, start on opposite diagonal territories. With 3-4 players, you may start anywhere.</li>
+        <li>Begin with 1 of each resource.</li>
+        <li>Organize the resource cards into separate piles next to the board.</li>
+    </ul>
+
+    <h4>Player Turn Phases</h4>
+        <strong>Income (Every turn):</strong>
+            <ul>
+                <li>Roll the resource die to collect 1 resource corresponding to your roll.</li>
+                <li>If you own an island with a matching number, you get 2 resources from it. If you have a city on the island, you will get 1 resource when another player rolls that number. (You must have a Village or City on the island to claim resources.)</li>
+                <li>You roll 1 die per turn.</li>
+            </ul>
+
+    <h4>Resource Types</h4>
+    <ol>
+        <li>Wood</li>
+        <li>Brick</li>
+        <li>Wheat</li>
+        <li>Wool</li>
+        <li>Ore</li>
+        <li>Wild (Pick any resource of your choice)</li>
+    </ol>
+
+    <h4>Building (Optional)</h4>
+    <ul>
+        <li>Use resources to build or expand. Refer to the recipe card for building costs.</li>
+        <li>Build Armies: Place additional armies on islands you own (except on main islands).</li>
+        <li>Establish New Bases: Build villages or cities on unclaimed islands. You need a boat to reach new islands, but you can reuse it. Once you establish a base, the boat can explore further.</li>
+        <li>Upgrade Armies: Use upgrades to enhance your armies (details in the “Upgrading” section).</li>
+        <li>Restrictions: You cannot build defenses or armies on main islands. However, each main island automatically has +3 defense.</li>
+    </ul>
+
+    <h4>Combat (Optional)</h4>
+    <ul>
+        <li><strong>Attack Adjacent Territories:</strong> You must have a boat and an army to attack other islands.</li>
+        <li>If the enemy island has only a village or city, the defender has a penalty:
+            <ul>
+                <li>Attacking a village: -2 to the defender’s roll.</li>
+                <li>Attacking a city: -1 to the defender’s roll.</li>
+            </ul>
+        </li>
+        <li>If there is an army, both sides roll a die and compare results. The higher roll wins. However, if the island has a defense, the defender gets +2 to their roll. Only one defense is allowed per island.</li>
+        <li>Armies and defenses on the same island grant the defender +2.</li>
+        <li>Upgraded armies give a bonus when attacking but not when defending:
+            <ul>
+                <li>A single upgraded army gives +1 to the attack roll.</li>
+                <li>A double upgraded army gives +2 to the attack roll.</li>
+            </ul>
+        </li>
+        <li>In case of a tie, the attacker wins.</li>
+        <li>If you win, remove all enemy pieces from the island and place them back in the bank. If you lose, your army is sent back to the bank. You can then build on the conquered island.</li>
+    </ul>
+
+    <h4>Islands</h4>
+    <p>To claim an island, land your forces and defeat any defenders. If no one controls the island, you claim it instantly, but you must build a Village or City to fully own it.</p>
+    <h3></h3>
+
+    <h4>How to Win</h4>
+    <ul>
+    <li><strong>Elimination:</strong> Conquer all other players. When you defeat a player, take their resource cards, but their color pieces are removed from the board.</li>
+    <h3></h3>
+    <li><strong>Conquering:</strong> Conquer all islands. (This is a much harder way to win and will not usually happen. </li>
+        </ul>
+    <h3></h3>
+    <h4>Additional Rules</h4>
+    <ul>
+        <li><strong>Trading:</strong> Players may trade resources with each other. Trades must be mutually agreed upon. Players can also trade with the "bank" by exchanging 2 of the same resource for 1 of a different type.</li>
+        <li><strong>Upgrading:</strong> Use upgrade tokens to enhance armies. A single upgrade grants +1 to dice rolls, while a double upgrade grants +2. You can upgrade 3 armies once each, and 1 army twice. Upgrades are purchased with resources. Upgraded armies only give bonuses when attacking, not defending.</li>
+    </ul>
+
+    <h4>Other Information</h4>
+    <ul>
+        <li>Game Length: TBD</li>
+        <li>Players: 2-4 players</li>
+    </ul>
+ <hr>
+</body>
